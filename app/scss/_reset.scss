@@ -137,9 +137,7 @@ table {
 
 a {
     color: inherit;
-    /* blue colors for links too */
-    text-decoration: inherit;
-    /* no underline */
+    text-decoration: none;
 }
 
 * {
@@ -150,4 +148,16 @@ a {
 
 input {
     outline: none;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }

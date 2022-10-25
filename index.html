@@ -5,469 +5,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JAKE & JT</title>
+    <title>Arivan Agarwal</title>
     <link rel="stylesheet" href="dist/App.css?1" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link rel="preload" as="image" href="img/hero.png" />
 </head>
 
 <body>
     <div class="body-container">
-        <div class="hero">
-            <div class="hero-container">
-                <img src="img/hero.png?1" alt="Hero img" />
-            </div>
-            <div class="overlay">
-                <div class="overlay-content">
-                    <div class="logo-container">
-                        <a href="/">
-                            <svg width="153" height="74" viewBox="0 0 153 74" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.2472 49.32V62.45L9.45321 64.244H5.37121L3.05721 61.956L1.00321 64.01L3.96721 67H10.8572L14.3152 63.568V49.32H11.2472ZM32.9706 67H36.2726L29.1226 49.32H26.0806L18.9566 67H22.1026L23.6106 63.048H31.4626L32.9706 67ZM24.6766 60.318L27.5366 52.83L30.3966 60.318H24.6766ZM56.5569 67L48.1849 57.9L56.1409 49.32H52.4229L44.8309 57.51V49.32H41.7629V67H44.8309V58.55L52.5789 67H56.5569ZM75.3957 52.076V49.32H61.6417V67H75.3957V64.244H64.7097V59.46H74.0957V56.73H64.7097V52.076H75.3957ZM106.24 67L102.21 63.1L104.394 60.916L102.496 59.018L100.286 61.202L97.5044 58.498L99.1944 57.64L101.014 55.82V51.712L98.6224 49.32H93.1624L90.7704 51.712V55.69L93.0324 57.9L91.3684 58.732L89.4184 60.656V64.556L91.8624 67H98.3104L100.338 64.972L102.418 67H106.24ZM93.5784 54.676V52.778L94.5924 51.764H97.1924L98.2064 52.778V54.754L97.1924 55.794L95.5804 56.626L93.5784 54.676ZM96.9584 64.53H93.2664L92.3304 63.594V61.618L93.3704 60.604L94.9824 59.772L98.3884 63.1L96.9584 64.53ZM128.614 49.32V62.45L126.82 64.244H122.738L120.424 61.956L118.37 64.01L121.334 67H128.224L131.682 63.568V49.32H128.614ZM151.7 49.32H137.062V52.076H142.834V67H145.902V52.076H151.7V49.32Z"
-                                    fill="white" />
-                                <rect x="45" width="27" height="6" fill="#EF4025" />
-                                <rect x="77" width="27" height="6" fill="#EF4025" />
-                                <rect x="83" width="27" height="6" transform="rotate(90 83 0)" fill="#EF4025" />
-                                <rect x="104" width="27" height="6" transform="rotate(90 104 0)" fill="#EF4025" />
-                                <rect x="45" y="10.5" width="27" height="6" fill="#EF4025" />
-                                <rect x="45" y="21" width="27" height="6" fill="#EF4025" />
-                                <rect x="77" y="21" width="27" height="6" fill="#EF4025" />
-                            </svg>
-                        </a>
-                    </div>
-                    <h1>
-                        <p>Your local,</p>
-                        <p>personal trainer</p>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div class="training">
-            <div class="wrapper relative">
-                <img src="img/training.png?1" alt="Personal Training" />
-                <nav class="navigation">
-                    <ul>
-                        <li data-id="cardio-strength-training">
-                            Cardio Strength Training
-                        </li>
-                        <li data-id="studio-classes">Studio Classes</li>
-                        <li data-id="online-training">Online Training</li>
-                        <li data-id="coaches">Coaches</li>
-                        <!-- <li data-id="cardio-strength-training">Blog</li> -->
-                    </ul>
-                </nav>
-                <div class="form-container">
-                    <div class="form-wrapper">
-                        <p class="form-title">Start personal training</p>
-                        <div class="cost-list">
-                            <div class="cost-block _selected" data-package="Drop In - $35">
-                                <p>Drop-in</p>
-                                <p>$35</p>
-                            </div>
-                            <div class="cost-block" data-package="3 × Week - $299 /mo">
-                                <p>3 × Week</p>
-                                <p>$299 /mo</p>
-                            </div>
-                            <div class="cost-block" data-package="Unlimited - $299 /mo">
-                                <p>Unlimited</p>
-                                <p>$299 /mo</p>
-                            </div>
-                        </div>
-                        <form class="contact-form">
-                            <div class="form-field">
-                                <input id="name" class="input-text js-input" type="text" />
-                                <label class="label" for="name">Name</label>
-                            </div>
-                            <div class="form-field">
-                                <input id="email" class="input-text js-input" type="email" />
-                                <label class="label" for="email">E-mail</label>
-                            </div>
-                            <div class="form-field select-field">
-                                <div class="custom-select">
-                                    <select id="why" placeholder="Im training for:">
-                                        <option value="0" selected disabled>I'm training for</option>
-                                        <option value="Weight Loss">Weight Loss</option>
-                                        <option value="Stamina">Stamina</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-field align-center no-margin">
-                                <input class="submit-btn" type="submit" value="Send Inquiry" />
-                                <div class="loader-container hide">
-                                    <div class="loader"></div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="cardio-strength-training" class="cardio-strength-training nav-section">
-            <div class="wrapper cardio-strength-training-wrapper">
-                <div class="mini-title">Cardio Strength Training</div>
-                <h4 class="title">30/30 for 30 mins</h4>
-                <p class="content">
-                    Cardio Strength Training is 30 sec on, 30 sec off, for 30 mins.
-                    Build strength, agility & stamina through high intensity fun
-                    workouts.
-                </p>
-            </div>
-        </div>
-        <div class="studio-floor">
+        <div class="nav-container">
             <div class="wrapper">
-                <div class="page-title">You belong to the studio floor</div>
-                <div class="section-grid">
-                    <div class="block">
-                        <div class="img-wrapper">
-                            <img src="img/simple.png?1" alt="Simple" />
-                            <div class="overlay">
-                                <span class="caption">Simple</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            You’re the only equipment you need. Your drive and our guidance.
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="img-wrapper">
-                            <img src="img/creative.png?1" alt="Creative" />
-                            <div class="overlay">
-                                <span class="caption">Creative</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            Workout as work of art. Get fresh, new, inspired workouts
-                            everyday.
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="img-wrapper">
-                            <img src="img/personal.png?1" alt="Personal" />
-                            <div class="overlay">
-                                <span class="caption">Personal</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            Get customized care from a personal coach who cares about your
-                            goals.
-                        </div>
-                    </div>
+                <div class="logo-sec">
+                    <span class="circle"></span>
+                    <span class="name"><a href="/">Arivan Agarwal</a></span>
                 </div>
+                <!-- <nav>
+                    <span></span>
+                </nav> -->
             </div>
         </div>
-        <div id="studio-classes" class="studio-sessions">
+        <div class="hero-section">
             <div class="wrapper">
-                <div class="page-title">Studio Classes</div>
-                <div class="weekly-time-table">
-                    <div class="date-block">
-                        <div class="date">Sun, Aug 21</div>
-                        <div class="timings _no-sessions">No class available</div>
+                <div class="hero-container">
+                    <div class="hero-img">
+                        <img src="img/hero.webp" alt="Arivan Agarwal">
                     </div>
-                    <div class="date-block">
-                        <div class="date">Mon, Aug 22</div>
-                        <div class="timings">
-                            <p>7:00 - 7:45 AM</p>
-                            <p>8:15 - 9:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="date-block">
-                        <div class="date">Tue, Aug 23</div>
-                        <div class="timings">
-                            <p>7:00 - 7:45 AM</p>
-                            <p>8:15 - 9:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="date-block">
-                        <div class="date">Wed, Aug 24</div>
-                        <div class="timings">
-                            <p>7:00 - 7:45 AM</p>
-                            <p>8:15 - 9:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="date-block">
-                        <div class="date">Thu, Aug 25</div>
-                        <div class="timings _no-sessions">No class available</div>
-                    </div>
-                    <div class="date-block">
-                        <div class="date">Fri, Aug 26</div>
-                        <div class="timings">
-                            <p>7:00 - 7:45 AM</p>
-                            <p>8:15 - 9:00 AM</p>
-                        </div>
-                    </div>
-                    <div class="date-block">
-                        <div class="date">Sat, Aug 27</div>
-                        <div class="timings">
-                            <p>8:00 - 8:45 AM</p>
+                    <div class="hero-text">
+                        <p>Hello</p>
+                        <p>A Bit About Me</p>
+                        <p>I am Arivan Agarwal studying in Bombay Scottish School, Mahim in Grade 12, batch of 2023.</p>
+                        <div class="btn-links">
+                            <div class="btn _yellow">Resume</div>
+                            <div class="btn _red">Projects</div>
+                            <div class="btn _blue">Contact</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="online-training" class="video-section">
+        <div class="content-block">
             <div class="wrapper">
-                <div class="video-container">
-                    <iframe id="ytplayer" type="text/html" width="100%" height="100%"
-                        src="https://www.youtube.com/embed/9xwazD5SyVg?rel=0" frameborder="0"></iframe>
+                <div class="sec-title">My academic achievements</div>
+                <div class="sec-content">
+                    My academic interests lie in Math and Sciences, particularly Physics. My passion lies in Cricket and Football.  I am a highly passionate and hardworking person. Challenges bring out the best in me. I have been a student who has academically grown and learnt with age, accepting responsibility for my actions, which has led to more diligence towards my academics in high school. I stood among the top 4 in Grade 9 in my batch of 258 students, scored 97.0% in Grade 10 in the final board exams and topped Grade11 as a 1st ranker. I have been consistent with my studies and earned personal accolades in Science (PCB), Mathematics, Social Studies and Hindi. PCM and Computer Science subjects have always excited me because of their broad application in the real world. They have helped me to comprehend and think quickly and efficiently in key decisive situations. These subjects have definitely increased my analytical and logical thinking skills and because of my high interests in them, it has always motivated me to be the best in these respective subjects.
                 </div>
             </div>
         </div>
-        <div id="coaches" class="coaching">
+        <div class="content-block">
             <div class="wrapper">
-                <div class="page-title">World Class Coaching</div>
-                <div class="table-wrapper">
-                    <div class="time-table">
-                        <div class="cell _no-border"></div>
-                        <div class="cell _no-border">
-                            <a href="/">
-                                <svg width="153" height="30" viewBox="0 0 153 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="45" width="27" height="6" fill="#EF4025" />
-                                    <rect x="77" width="27" height="6" fill="#EF4025" />
-                                    <rect x="83" width="27" height="6" transform="rotate(90 83 0)" fill="#EF4025" />
-                                    <rect x="104" width="27" height="6" transform="rotate(90 104 0)" fill="#EF4025" />
-                                    <rect x="45" y="10.5" width="27" height="6" fill="#EF4025" />
-                                    <rect x="45" y="21" width="27" height="6" fill="#EF4025" />
-                                    <rect x="77" y="21" width="27" height="6" fill="#EF4025" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="cell _no-border">
-                            <img src="img/soul.png?1" alt="Soul Fitness" />
-                        </div>
-                        <div class="cell _no-border">
-                            <img src="img/crossfit.png?1" alt="crossfit" />
-                        </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">Cardio Strength Training</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">Focus on strength</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">Increase cardio</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">Focus on balance</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell"></div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">Safe, technique based</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div class="cell"></div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">New workouts daily</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    </div>
-                    <div class="time-table">
-                        <div class="cell">30 min workouts</div>
-                        <div class="cell">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.4183 23.218H12.6363C12.8393 21.971 13.3903 20.608 14.3183 19.129C16.1743 16.2 19.9153 13.329 23.1343 12.662V11.444C21.5393 11.096 19.9733 10.371 18.4653 9.298C15.3913 7.123 13.1293 3.875 12.6363 0.946H11.4183C11.1283 2.483 10.4613 3.962 9.4173 5.47C7.3583 8.457 4.1393 10.661 0.862301 11.444V12.662C2.5153 13.01 4.1973 13.822 5.8503 15.069C9.2143 17.592 10.9833 20.724 11.4183 23.218Z"
-                                    fill="#EF4025" />
-                            </svg>
-                        </div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    </div>
+                <div class="sec-title">My sporting accomplishments</div>
+                <div class="sec-content">
+                    The challenge sport presents to me is pure adrenaline. I played a lot of sport till grade 9 and then chose to peter it down because of board exams and the pandemic. I have represented the U-14 and U-19 school cricket team. In fact our U-14 team did so well that it went all the way to the semi-final of the Guies Shield tournament. My favourite moments in this match were my century score in batting and the contributions to the team with my bowling, which is something that does not happen often. Despite us losing, this performance of mine helped a lot in the incoming tournaments. In the U-19 cricket team we reached the quarter-final in the Council National Sports at the Regional Level. I have also represented my school in table tennis and reached the 3rd position in the DSO (District Sports Office) championship.
                 </div>
-                ​
             </div>
         </div>
-        <div class="contact-us">
+        <div class="content-block">
             <div class="wrapper">
-                <div class="logo-container">
-                    <a href="/">
-                        <svg width="153" height="30" viewBox="0 0 153 30" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="45" width="27" height="6" fill="#EF4025" />
-                            <rect x="77" width="27" height="6" fill="#EF4025" />
-                            <rect x="83" width="27" height="6" transform="rotate(90 83 0)" fill="#EF4025" />
-                            <rect x="104" width="27" height="6" transform="rotate(90 104 0)" fill="#EF4025" />
-                            <rect x="45" y="10.5" width="27" height="6" fill="#EF4025" />
-                            <rect x="45" y="21" width="27" height="6" fill="#EF4025" />
-                            <rect x="77" y="21" width="27" height="6" fill="#EF4025" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="contact-block">
-                    <div class="img-block">
-                        <img src="img/contact.png?1" alt="Contact us" />
-                    </div>
-                    <div class="map-frame">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="100%" height="100%" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=247%20Shoreline%20Hwy%20Mill%20Valley,%20CA%20-%209494&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                    href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br />
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 100%;
-                                        width: 100%;
-                                    }
-                                </style><a href="https://www.embedgooglemap.net">google map on web page</a>
-                                <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 100%;
-                                        width: 100%;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                        <div class="overlay">
-                            <div class="contact-details">
-                                <p>Contact us</p>
-                                <p>(415) 480-9159</p>
-                                <p>questions@jakeandjt.com</p>
-                                <p>247 Shoreline Hwy</p>
-                                <p>Mill Valley, CA - 94941</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="social">
-            <div class="wrapper">
-                <div class="social-wrapper">
-                    <a href="" target="_blank"><img src="img/facebook.png?1" alt="facebook" /></a>
-                    <a href="https://www.instagram.com/jakeandjt/" target="_blank"><img
-                            src="img/instagram.png?1" alt="instagram" /></a>
-                    <a href="https://www.tiktok.com/@jakeandjtt/" target="_blank"><img src="img/tiktok.png?1"
-                            alt="tiktok" /></a>
-                    <a href="https://youtube.com/channel/UCERV0B8X9dfy-a74iS47UEA" target="_blank"><img
-                            src="img/youtube.png?1" alt="youtube" /></a>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div id="success_tic" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+                <div class="sec-title">My career vision</div>
+                <div class="sec-content">
+                    <p>I plan to pursue Computer Engineering because the future of the world lies in technology and I have gained some exposure to the field which has given me further insights on the immeasurable possibilities in this field. The idea of being in a field with constant challenges excites me.</p>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <a class="close" href="#" data-dismiss="modal">&times;</a>
-                    <div class="page-body">
-                        <div class="head">
-                            <h3 style="margin-top:5px;">Your message has been sent across to the team. Stay tuned for a response.</h4>
-                        </div>
+                    <p>I have done a few advanced courses from a platform Coding Ninjas like the Data Structures and Algorithms in Java and Data Science and Machine Learning.
+                    Data Structures and Algorithms - I studied in depth regarding the programming language Java like Strings, Arrays, Recursion, Linked Lists, Stacks, Queues, Inheritances, trees, OOPS concepts etc. This course established my base foundation in programming and helped me to write codes to solve problems, give insights into them and also check the efficiency of the algorithms. This process in checking the efficiency of the algorithm helped me analyse if the algorithm justly gave the output to qualify the student liable for the loan.
+                    Data Science and Machine Learning - I studied basics regarding the programming language in Python and learnt about Functions, OOP concepts, Working with files, numpy, pandas. This furnished my programming skills and helped me to go in depth in the data analysis project where I used the above skills to implement algorithms and also  explore Machine Learning.</p>
 
-                        <div class="main-container">
-                            <div class="check-container">
-                                <div class="check-background">
-                                    <svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 25L27.3077 44L58.5 7" stroke="white" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="check-shadow"></div>
-                            </div>
-                        </div>
+                    <p>I used the above knowledge to do a few application-based projects.</p>
 
-                    </div>
+                    <p>I further learned some Machine Learning concepts in that field: Linear Regression, Logistic Regression, Decision Trees, Random Forests and Naive Bayes. I did a project in Machine Learning - Optical Character Recognition. This project aims to digitise health records that can be used for archival purposes, health analytics, and better health policies. I got to use textbook algorithms to digitise health records. I learned about computer vision and deep learning algorithms. I learned about existing OCR solutions and their limitations and the modifications needed for the regional context.</p>
+
+                    <p>Through ML Workflow which is  line segmentation and character segmentation, I could identify and isolate the position of each character. Then using Deep Learning Models like CNNs I could classify that character. This machine learning project especially increased my curiosity in this field.</p>
+
+                    <p>Having got some understanding in coding and its application I secured an internship at a start-up company Kuhoo, which is a fin-tech company in student education loan financing business in India. It was my first exposure to the outside professional corporate world. I further learnt relevant segments like python, machine learning, and attended webinars at Kuhoo, where various interns shared their experiences and knowledge. I was fortunate to have good mentors who took the time out to take me through the concepts, applications and processes required which in turn helped me proceed with some confidence and independence in Data Analysis to evaluate the loan eligibility of a student.</p>
+
+                    <p>I learnt and implemented the algorithms which are an integral tool for a fin-tech company when making a decision on loan eligibility of the student. This application in the real world increased my interest in technology and am yearning to learn more through further education and real-world experiences.</p>
                 </div>
             </div>
-
         </div>
+        <div class="content-block">
+            <div class="wrapper">
+                <div class="sec-title">My societal contribution</div>
+                <div class="sec-content">
+                    <p>Last year when I was at a wedding in my home-town in Jodhpur, I happened to visit some of the villages by sheer chance with an uncle. Being a complete city boy, what I witnessed in the village moved me beyond comprehension. I saw the lack of sanitation and facilities in basic amenities like toilets which made it impossible for people to use it even though they had provision for a toilet.</p>
+
+                    <p>I took on the task to research and discover the challenges faced by the villagers to live a life of dignity. My campaign is in the area of Sanitation, which is an important aspect of this basic right. I conducted a small pilot project addressing two issues: 1. Usage by the specially-abled people: Standard Indian style toilet seat is not accessible/convenient for them to sit and 2. providing lighting solutions in public toilets:  Making them usable during the night.</p>
+
+                    <p>After conducting many talks and presentations, I was able to convey my idea to many people in the big cities to come forward to contribute to my cause and was able to collect a total of Rs.3,84,512 through a crowdfunding platform.  I collaborated with an IIT alumni to find a solution for the old and disabled. With the money collected I was able to provide 50 RETROFIT TOILET KITS and 50 LED Lights in small rural area Jodhpur in Rajasthan. I personally went there and documented the work and saw that the people were quite satisfied and happy. I am in touch with a few agencies who can take this project up on a larger scale. I also presented the benefits of improved sanitation in people's lives to a company Aviom Housing. They liked my thoughts and deployed money and resources to set up new toilets in rural parts of Rajasthan.</p>
+
+                    <p>I also partnered with an NGO Masoom and taught underprivileged students Computer Science, English language skills and Mathematics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="wrapper">
+                <div class="sec-title">My passions</div>
+                <div class="sec-content">
+                    During my leisure hours, I love to play cricket, football and table-tennis. I am an avid follower of European Football and love to watch Netflix TV shows such as Suits and Lucifer. I love to travel as I feel you learn more by travelling and the learnings stay etched in your mind as beautiful memories.
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-container">
+                    <div class="footer-block">
+                        <div class="footer-sec-title">Phone</div>
+                        <div class="footer-sec-text">123-456-7890</div>
+                    </div>
+                    <div class="footer-block">
+                        <div class="footer-sec-title">Email</div>
+                        <div class="footer-sec-text">info@mysite.com</div>
+                    </div>
+                    <div class="footer-block">
+                        <div class="footer-sec-title">Follow Me</div>
+                        <div class="footer-sec-text"></div>
+                    </div>
+                    <!-- <div class="footer-block">
+                        <div class="footer-sec-title"></div>
+                        <div class="footer-sec-text"></div>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="dist/script.js"></script>
 </body>
 

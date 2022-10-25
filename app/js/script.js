@@ -1,101 +1,101 @@
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    emailjs.init("user_d5YOhq2lPZOSZcNXgB5vb");
+//     emailjs.init("user_d5YOhq2lPZOSZcNXgB5vb");
 
-    $('.cost-block').click(function (e) {
-        $('.cost-block').removeClass('_selected');
-        $(this).addClass('_selected');
-    });
+//     $('.cost-block').click(function (e) {
+//         $('.cost-block').removeClass('_selected');
+//         $(this).addClass('_selected');
+//     });
 
-    $("nav.navigation ul li").click(function () {
-        var el = `#${$(this).attr("data-id")}`;
-        console.log(el);
-        document.querySelector(el).scrollIntoView({
-            behavior: "smooth",
-        });
-    });
+//     $("nav.navigation ul li").click(function () {
+//         var el = `#${$(this).attr("data-id")}`;
+//         console.log(el);
+//         document.querySelector(el).scrollIntoView({
+//             behavior: "smooth",
+//         });
+//     });
 
-    $(".js-input").keyup(function () {
-        if ($(this).val()) {
-            $(this).addClass("not-empty");
-        }
-        else {
-            $(this).removeClass("not-empty");
-        }
-    });
+//     $(".js-input").keyup(function () {
+//         if ($(this).val()) {
+//             $(this).addClass("not-empty");
+//         }
+//         else {
+//             $(this).removeClass("not-empty");
+//         }
+//     });
 
-    $('.submit-btn').click(function (e) {
+//     $('.submit-btn').click(function (e) {
 
-        e.preventDefault()
+//         e.preventDefault()
 
-        var $name = $('#name');
-        var nameVal = $name.val();
-        var $email = $('#email');
-        var emailVal = $email.val();
-        var $why = $('#why');
-        var whyVal = $why.val();
-        var package = $('.cost-block._selected').data('package');
+//         var $name = $('#name');
+//         var nameVal = $name.val();
+//         var $email = $('#email');
+//         var emailVal = $email.val();
+//         var $why = $('#why');
+//         var whyVal = $why.val();
+//         var package = $('.cost-block._selected').data('package');
 
-        if (nameVal === "") {
-            $name.parent('.form-field').addClass('_error');
-            $name.focus();
-        }
-        else {
-            $name.parent('.form-field').removeClass('_error');
-        }
+//         if (nameVal === "") {
+//             $name.parent('.form-field').addClass('_error');
+//             $name.focus();
+//         }
+//         else {
+//             $name.parent('.form-field').removeClass('_error');
+//         }
 
-        if (emailVal === "" || !validateEmail(emailVal)) {
-            $email.parent('.form-field').addClass('_error');
-            $email.focus();
-        }
-        else {
-            $email.parent('.form-field').removeClass('_error');
-        }
+//         if (emailVal === "" || !validateEmail(emailVal)) {
+//             $email.parent('.form-field').addClass('_error');
+//             $email.focus();
+//         }
+//         else {
+//             $email.parent('.form-field').removeClass('_error');
+//         }
 
-        if (whyVal === null) {
-            $why.parent().parent('.form-field').addClass('_error');
-            $why.focus();
-        }
-        else {
-            $why.parent().parent('.form-field').removeClass('_error');
-        }
+//         if (whyVal === null) {
+//             $why.parent().parent('.form-field').addClass('_error');
+//             $why.focus();
+//         }
+//         else {
+//             $why.parent().parent('.form-field').removeClass('_error');
+//         }
 
 
-        if (nameVal !== "" && emailVal !== "" && whyVal !== null) {
+//         if (nameVal !== "" && emailVal !== "" && whyVal !== null) {
 
-            $('.loader-container').removeClass('hide');
-            $('.submit-btn').addClass('hide');
-            $name.parent('.form-field').removeClass('_error');
-            $email.parent('.form-field').removeClass('_error');
-            $why.parent().parent('.form-field').removeClass('_error');
+//             $('.loader-container').removeClass('hide');
+//             $('.submit-btn').addClass('hide');
+//             $name.parent('.form-field').removeClass('_error');
+//             $email.parent('.form-field').removeClass('_error');
+//             $why.parent().parent('.form-field').removeClass('_error');
 
-            var templateParams = {
-                name: nameVal,
-                email: emailVal,
-                imTrainingFor: whyVal,
-                packageType: package
-            };
+//             var templateParams = {
+//                 name: nameVal,
+//                 email: emailVal,
+//                 imTrainingFor: whyVal,
+//                 packageType: package
+//             };
 
-            emailjs.send('service_011qhag', 'template_8akb9so', templateParams)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    $('.loader-container').addClass('hide');
-                    $('.submit-btn').removeClass('hide');
-                    $('#success_tic').modal('show');
-                    $name.val('');
-                    $email.val('');
-                    $why.val(0);
-                    $('.cost-block').removeClass('_selected');
-                    $('.cost-block').eq(0).addClass('_selected');
-                }, function(error) {
-                    console.log('FAILED...', error);
-            });
-        }
-    })
-});
+//             emailjs.send('service_011qhag', 'template_8akb9so', templateParams)
+//                 .then(function(response) {
+//                     console.log('SUCCESS!', response.status, response.text);
+//                     $('.loader-container').addClass('hide');
+//                     $('.submit-btn').removeClass('hide');
+//                     $('#success_tic').modal('show');
+//                     $name.val('');
+//                     $email.val('');
+//                     $why.val(0);
+//                     $('.cost-block').removeClass('_selected');
+//                     $('.cost-block').eq(0).addClass('_selected');
+//                 }, function(error) {
+//                     console.log('FAILED...', error);
+//             });
+//         }
+//     })
+// });
 
-var validateEmail = (email) => {
-    return email.match(
-        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
+// var validateEmail = (email) => {
+//     return email.match(
+//         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//     );
+// };

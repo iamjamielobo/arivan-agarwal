@@ -1,29 +1,56 @@
 @font-face {
-    font-family: 'Brandon Grotesque';
-    src: url('fonts/BrandonGrotesque-Black.woff2') format('woff2'),
-        url('fonts/BrandonGrotesque-Black.woff') format('woff');
-    font-weight: 900;
+    font-family: 'avenirlight';
+    src: url('/fonts/avenir-light-webfont.woff2') format('woff2'),
+        url('/fonts/avenir-light-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
+
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.woff2') format('woff2'),
-        url('fonts/Poppins-Regular.woff') format('woff');
+    font-family: 'work_sansbold';
+    src: url('/fonts/worksans-bold-webfont.woff2') format('woff2'),
+        url('/fonts/worksans-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'work_sanslight';
+    src: url('/fonts/worksans-light-webfont.woff2') format('woff2'),
+        url('/fonts/worksans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'work_sanssemibold';
+    src: url('/fonts/worksans-semibold-webfont.woff2') format('woff2'),
+        url('/fonts/worksans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'work_sansregular';
+    src: url('/fonts/worksans-webfont.woff2') format('woff2'),
+        url('/fonts/worksans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
-// $font-uno: 'Brandon Grotesque', sans-serif;
-$font-uno: 'Poppins', sans-serif;
-$font-title: 'Poppins', sans-serif;
+$font-title: 'work_sanssemibold', sans-serif;
+$font-uno: 'work_sansregular', sans-serif;
+$font-text: 'avenirlight', sans-serif;
 
 body,
 html {
-    font-family: $font-uno!important;
+    font-family: $font-uno !important;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
