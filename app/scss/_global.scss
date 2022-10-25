@@ -1,0 +1,21 @@
+$black: #000000;
+$white: #ffffff;
+$cardioBg: rgba(0, 0, 0, 0.8);
+$cardioFontColor: #a3a3a3;
+
+.relative {
+    position: relative;
+}
+
+// Helpers
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.align-center {
+    text-align: center;
+}
