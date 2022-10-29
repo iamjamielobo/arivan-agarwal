@@ -10,6 +10,14 @@
     <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link rel="preload" as="image" href="img/hero.png" />
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.js"></script>
+    <link href="https://unpkg.com/splitting/dist/splitting.css" rel="stylesheet" />
+    <link href="dist/hover-min.css" rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 <body>
@@ -36,9 +44,9 @@
                         <p>A Bit About Me</p>
                         <p>I am Arivan Agarwal studying in Bombay Scottish School, Mahim in Grade 12, batch of 2023.</p>
                         <div class="btn-links">
-                            <div class="btn _yellow">Resume</div>
-                            <div class="btn _red">Projects</div>
-                            <div class="btn _blue">Contact</div>
+                            <div class="btn _yellow animate__animated animate__zoomInUp hvr-radial-out">Resume</div>
+                            <div class="btn _red animate__animated animate__zoomInUp hvr-radial-out">Projects</div>
+                            <div class="btn _blue animate__animated animate__zoomInUp hvr-radial-out">Contact</div>
                         </div>
                     </div>
                 </div>
@@ -46,7 +54,7 @@
         </div>
         <div class="content-block">
             <div class="wrapper">
-                <div class="sec-title">My academic achievements</div>
+                <div data-splitting class="sec-title">My academic achievements</div>
                 <div class="sec-content">
                     My academic interests lie in Math and Sciences, particularly Physics. My passion lies in Cricket and Football.  I am a highly passionate and hardworking person. Challenges bring out the best in me. I have been a student who has academically grown and learnt with age, accepting responsibility for my actions, which has led to more diligence towards my academics in high school. I stood among the top 4 in Grade 9 in my batch of 258 students, scored 97.0% in Grade 10 in the final board exams and topped Grade11 as a 1st ranker. I have been consistent with my studies and earned personal accolades in Science (PCB), Mathematics, Social Studies and Hindi. PCM and Computer Science subjects have always excited me because of their broad application in the real world. They have helped me to comprehend and think quickly and efficiently in key decisive situations. These subjects have definitely increased my analytical and logical thinking skills and because of my high interests in them, it has always motivated me to be the best in these respective subjects.
                 </div>
@@ -54,7 +62,7 @@
         </div>
         <div class="content-block">
             <div class="wrapper">
-                <div class="sec-title">My sporting accomplishments</div>
+                <div data-splitting class="sec-title">My sporting accomplishments</div>
                 <div class="sec-content">
                     The challenge sport presents to me is pure adrenaline. I played a lot of sport till grade 9 and then chose to peter it down because of board exams and the pandemic. I have represented the U-14 and U-19 school cricket team. In fact our U-14 team did so well that it went all the way to the semi-final of the Guies Shield tournament. My favourite moments in this match were my century score in batting and the contributions to the team with my bowling, which is something that does not happen often. Despite us losing, this performance of mine helped a lot in the incoming tournaments. In the U-19 cricket team we reached the quarter-final in the Council National Sports at the Regional Level. I have also represented my school in table tennis and reached the 3rd position in the DSO (District Sports Office) championship.
                 </div>
@@ -62,7 +70,21 @@
         </div>
         <div class="content-block">
             <div class="wrapper">
-                <div class="sec-title">My career vision</div>
+                <div data-splitting class="sec-title">My societal contribution</div>
+                <div class="sec-content">
+                    <p>Last year when I was at a wedding in my home-town in Jodhpur, I happened to visit some of the villages by sheer chance with an uncle. Being a complete city boy, what I witnessed in the village moved me beyond comprehension. I saw the lack of sanitation and facilities in basic amenities like toilets which made it impossible for people to use it even though they had provision for a toilet.</p>
+
+                    <p>I took on the task to research and discover the challenges faced by the villagers to live a life of dignity. My campaign is in the area of Sanitation, which is an important aspect of this basic right. I conducted a small pilot project addressing two issues: 1. Usage by the specially-abled people: Standard Indian style toilet seat is not accessible/convenient for them to sit and 2. providing lighting solutions in public toilets:  Making them usable during the night.</p>
+
+                    <p>After conducting many talks and presentations, I was able to convey my idea to many people in the big cities to come forward to contribute to my cause and was able to collect a total of Rs.3,84,512 through a crowdfunding platform.  I collaborated with an IIT alumni to find a solution for the old and disabled. With the money collected I was able to provide 50 RETROFIT TOILET KITS and 50 LED Lights in small rural area Jodhpur in Rajasthan. I personally went there and documented the work and saw that the people were quite satisfied and happy. I am in touch with a few agencies who can take this project up on a larger scale. I also presented the benefits of improved sanitation in people's lives to a company Aviom Housing. They liked my thoughts and deployed money and resources to set up new toilets in rural parts of Rajasthan.</p>
+
+                    <p>I also partnered with an NGO Masoom and taught underprivileged students Computer Science, English language skills and Mathematics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="wrapper">
+                <div data-splitting class="sec-title">My career vision</div>
                 <div class="sec-content">
                     <p>I plan to pursue Computer Engineering because the future of the world lies in technology and I have gained some exposure to the field which has given me further insights on the immeasurable possibilities in this field. The idea of being in a field with constant challenges excites me.</p>
 
@@ -84,21 +106,7 @@
         </div>
         <div class="content-block">
             <div class="wrapper">
-                <div class="sec-title">My societal contribution</div>
-                <div class="sec-content">
-                    <p>Last year when I was at a wedding in my home-town in Jodhpur, I happened to visit some of the villages by sheer chance with an uncle. Being a complete city boy, what I witnessed in the village moved me beyond comprehension. I saw the lack of sanitation and facilities in basic amenities like toilets which made it impossible for people to use it even though they had provision for a toilet.</p>
-
-                    <p>I took on the task to research and discover the challenges faced by the villagers to live a life of dignity. My campaign is in the area of Sanitation, which is an important aspect of this basic right. I conducted a small pilot project addressing two issues: 1. Usage by the specially-abled people: Standard Indian style toilet seat is not accessible/convenient for them to sit and 2. providing lighting solutions in public toilets:  Making them usable during the night.</p>
-
-                    <p>After conducting many talks and presentations, I was able to convey my idea to many people in the big cities to come forward to contribute to my cause and was able to collect a total of Rs.3,84,512 through a crowdfunding platform.  I collaborated with an IIT alumni to find a solution for the old and disabled. With the money collected I was able to provide 50 RETROFIT TOILET KITS and 50 LED Lights in small rural area Jodhpur in Rajasthan. I personally went there and documented the work and saw that the people were quite satisfied and happy. I am in touch with a few agencies who can take this project up on a larger scale. I also presented the benefits of improved sanitation in people's lives to a company Aviom Housing. They liked my thoughts and deployed money and resources to set up new toilets in rural parts of Rajasthan.</p>
-
-                    <p>I also partnered with an NGO Masoom and taught underprivileged students Computer Science, English language skills and Mathematics.</p>
-                </div>
-            </div>
-        </div>
-        <div class="content-block">
-            <div class="wrapper">
-                <div class="sec-title">My passions</div>
+                <div data-splitting class="sec-title">My passions</div>
                 <div class="sec-content">
                     During my leisure hours, I love to play cricket, football and table-tennis. I am an avid follower of European Football and love to watch Netflix TV shows such as Suits and Lucifer. I love to travel as I feel you learn more by travelling and the learnings stay etched in your mind as beautiful memories.
                 </div>
@@ -128,7 +136,12 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="dist/script.js"></script>
+    <script>
+        Splitting();
+        ScrollOut({
+            targets: '[data-splitting]'
+        });
+    </script>
 </body>
 
 </html>
